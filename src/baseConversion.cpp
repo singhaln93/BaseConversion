@@ -1,5 +1,11 @@
+/**
+ * @file baseConversion.cpp
+ * @author Neeraj Singhal
+ * @date 2021-06-09
+ * 
+ */
+
 #include "baseConversion.h"
-using namespace std;
 
 namespace {}
 
@@ -13,7 +19,7 @@ void BaseConversion::revString(char str[], int length) {
   int start = 0;
   int end = length - 1;
   while (start < end) {
-    swap(*(str + start), *(str + end));
+    std::swap(*(str + start), *(str + end));
     start++;
     end--;
   }
@@ -70,10 +76,10 @@ char *BaseConversion::itoa(int num, char *str, int base) {
  * @param input
  * @return unsigned long long
  */
-unsigned long long BaseConversion::hex2dec(const string &input) {
+unsigned long long BaseConversion::hex2dec(const std::string &input) {
   unsigned long long n;
-  stringstream ss;
-  ss << hex << uppercase << input;
+  std::stringstream ss;
+  ss << std::hex << std::uppercase << input;
   // ss << hex << lowercase << input;
   ss >> n;
   return n;
