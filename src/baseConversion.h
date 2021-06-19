@@ -2,7 +2,7 @@
  * @file baseConversion.h
  * @author Neeraj Singhal
  * @date 2021-06-09
- * 
+ *
  */
 
 #ifndef BASECONVERSION_H
@@ -11,13 +11,13 @@
 #include <iomanip>
 #include <iostream>
 #include <math.h>
+#include <sstream>
 #include <stdlib.h>
 #include <string.h>
-#include <sstream>
 
 /**
  * @brief Base Conversion Class
- * 
+ *
  */
 class BaseConversion {
 private:
