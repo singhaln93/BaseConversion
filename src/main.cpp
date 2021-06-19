@@ -32,6 +32,15 @@ int main() {
   std::cout << "Int:" << std::hex << std::uppercase << a << "h"
        << "\tBin:" << base.int2bin(a) << "b" << std::endl;
 
+  std::bitset<8> b(a);
+  std::cout<<"0"<<b[0]<<std::endl;
+  std::cout<<b[1]<<std::endl;
+  std::cout<<b[2]<<std::endl;
+  std::cout<<b[3]<<std::endl;
+  std::cout<<b[4]<<std::endl;
+  std::cout<<b[5]<<std::endl;
+  std::cout<<b[6]<<std::endl;
+  std::cout<<"7"<<b[7]<<std::endl;
   // int v[16] = {0x45, 0x4D, 0x42, 0x52, 0x49, 0x4F, 0x4E, 0x49,
   //              0x58, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20};
   // char* v1[16]{0};
