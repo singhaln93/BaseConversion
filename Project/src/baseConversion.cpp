@@ -11,10 +11,6 @@ namespace {}
 
 BaseConversion::BaseConversion() {}
 
-/**
- * @brief utility function to reverse a string
- *
- */
 void BaseConversion::revString(char str[], int length) {
   int start = 0;
   int end = length - 1;
@@ -25,14 +21,6 @@ void BaseConversion::revString(char str[], int length) {
   }
 }
 
-/**
- * @brief utility function to implementation of itoa()
- *
- * @param num
- * @param str
- * @param base
- * @return char*
- */
 char *BaseConversion::itoa(int num, char *str, int base) {
   int i = 0;
   bool isNegative = false;
@@ -70,12 +58,6 @@ char *BaseConversion::itoa(int num, char *str, int base) {
   return str;
 }
 
-/**
- * @brief utility function to convert from hex(str) to dec(str)
- *
- * @param input
- * @return unsigned long long
- */
 unsigned long long BaseConversion::hex2dec(const std::string &input) {
   unsigned long long n;
   std::stringstream ss;
@@ -85,12 +67,6 @@ unsigned long long BaseConversion::hex2dec(const std::string &input) {
   return n;
 }
 
-/**
- * @brief utility function to convert from int to bin(bitform)
- *
- * @param input
- * @return std::bitset<8>
- */
 std::bitset<8> BaseConversion::int2bin(const int &input) {
   std::bitset<8> bin(input);
   return bin;
