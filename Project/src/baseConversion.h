@@ -9,7 +9,6 @@
 #define BASECONVERSION_H
 #include <bitset>
 #include <iomanip>
-#include <iostream>
 #include <math.h>
 #include <sstream>
 #include <stdlib.h>
