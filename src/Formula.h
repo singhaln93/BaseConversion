@@ -10,12 +10,11 @@
 
 /**
  * @brief  Formula Class
- * 
+ *
  */
-class Formula
-{
-    public:
-    static int bla(int arg1);
+class Formula {
+public:
+  static int bla(int arg1);
 };
 
 #endif

@@ -9,12 +9,9 @@
 namespace {}
 
 /**
- * @brief 
- * 
- * @param arg1 
- * @return int 
+ * @brief
+ *
+ * @param arg1
+ * @return int
  */
-int Formula::bla(int arg1)
-{
-    return arg1*2;
-}
+int Formula::bla(int arg1) { return arg1 * 2; }

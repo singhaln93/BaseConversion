@@ -5,9 +5,9 @@
  *
  */
 
-#include <iostream>
-#include "baseConversion.h"
 #include "Formula.h"
+#include "baseConversion.h"
+#include <iostream>
 
 int main() {
   BaseConversion base;
@@ -40,6 +40,6 @@ int main() {
   // v1 = base.intarr2chararr(v, 16);
   // cout << "vendor:" << v1 << endl;
 
-  std::cout<<"Bla:"<<Formula::bla(2)<<std::endl;
+  std::cout << "Bla:" << Formula::bla(2) << std::endl;
   return 0;
 }
