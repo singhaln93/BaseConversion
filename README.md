@@ -63,15 +63,28 @@ This is an example of how to list things you need to use the software and how to
 ### Folder structure
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
-
+    ├── docs/                       # docs-html generated files from doxygen
+    ├── Project/                    # Project Directory
+    │   ├── build/                  # build files
+    │   ├── dep/                    # dependencies
+    │   └── src/                    # source files
+    ├── Project-Unit-Test           # Unit Testing Directory
+    │   └── src/                    # Test code
+    ├── scripts/                    # scripts for automation
+    │   ├── clang-format/
+    │   ├── cmake/
+    │   ├── Doxygen/
+    │   └── git/
+    └── uml/                        # Plant Uml
+        └── Uml.plantuml
+    ├── CMakeLists.txt              # Main CMakeLists.txt
+    ├── README.md         
+    ├── LICENSE                     
 Use short lowercase names at least for the top-level files and folders except `LICENSE`, `README.md`
+##### Tree view
+```bash
+tree -L 2
+```
 
 
 <!-- USAGE EXAMPLES -->
@@ -137,3 +150,6 @@ Project Link: [https://github.com/Neeraj2K18/BaseConversion](https://github.com/
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew -->
+
+
+
