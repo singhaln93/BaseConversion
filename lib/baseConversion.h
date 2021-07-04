@@ -15,6 +15,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define SHARED_NODISCARD [[nodiscard]]
+#define SHARED_DEPRECATED [[deprecated]]
+#define SHARED_MAYBE_UNUSED [[maybe_unused]]
+
 /**
  * @brief Base Conversion Class
  *
@@ -61,5 +65,7 @@ public:
    */
   std::bitset<8> int2bin(const int &input);
   // char *intarr2chararr(int arr[], int length);
+
+  template <typename T> SHARED_NODISCARD int sum(T a, T b);
 };
 #endif

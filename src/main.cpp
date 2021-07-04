@@ -37,6 +37,8 @@ int main() {
   // char* v1[16]{0};
   // v1 = base.intarr2chararr(v, 16);
   // cout << "vendor:" << v1 << endl;
-
+  int a1{1}, b1{2};
+  int x = base.sum<int>(a1, b1);
+  std::cout << "Sum:" << x;
   return 0;
 }

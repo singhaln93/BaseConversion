@@ -1,0 +1,2 @@
+make clean -C ../../build/
+

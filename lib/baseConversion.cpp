@@ -80,3 +80,5 @@ std::bitset<8> BaseConversion::int2bin(const int &input) {
 //   }
 //   return output;
 // }
+
+template <typename T> int BaseConversion::sum(T a, T b) { return a + b; }
